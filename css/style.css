@@ -20,6 +20,21 @@ header,
   }
 }
 
+
+@media (max-width: 576px) {
+
+.sm-text {
+    font-size: 3rem;
+  }
+  
+.sm-text2 {
+    font-size: 1.5rem; }
+
+#skills img{
+  width: 50%;
+}
+}
+
 .top-nav-collapse,
 .page-footer {
   background-color: var(--main-color) !important;
@@ -174,6 +189,10 @@ header,
   text-shadow: 2px 2px 8px black;
 }
 
+.nav-link {
+  font-weight: bold;;
+}
+
 .color-text {
   color: var(--main-color);
 }
@@ -210,7 +229,37 @@ header,
 img {
   overflow: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 
 .wow {
   visibility: hidden;
+}
+
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+/* Colorize-zoom Container */
+.hover-gray img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/* The Transformation */
+.hover-gray:hover img {
+  filter: grayscale(0);
 }
