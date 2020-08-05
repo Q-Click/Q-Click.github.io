@@ -199,6 +199,7 @@ header,
 
 .btn-color {
   background-color: var(--main-color);
+  color: white
 }
 
 .avatar {
