@@ -215,6 +215,10 @@ header,
   /* width: 100%; */
 }
 
+.text-black {
+font-size: 1.2rem;
+}
+
 .btn-li {
   background-color: #0072b1;
 }
