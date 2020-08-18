@@ -89,32 +89,72 @@ $(document).ready(function () {
 
 function validateForm() {
   var name = document.getElementById("contact-name").value;
+  btn = document.getElementById("btn-form");
+  area = document.querySelector(".status");
   if (name == "") {
-    document.querySelector(".status").innerHTML = "Name cannot be empty";
-    return false;
+    area.innerHTML = "Name cannot be empty";
+    return (btn.disabled = true);
   }
   var email = document.getElementById("contact-email").value;
   if (email == "") {
-    document.querySelector(".status").innerHTML = "Email cannot be empty";
-    return false;
+    area.innerHTML = "Email cannot be empty!";
+    return (btn.disabled = true);
   } else {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(email)) {
-      document.querySelector(".status").innerHTML = "Email format invalid";
-      return false;
+      area.innerHTML = "Email format invalid!";
+      return (btn.disabled = true);
     }
   }
   var subject = document.getElementById("contact-Subject").value;
   if (subject == "") {
-    document.querySelector(".status").innerHTML = "Subject cannot be empty";
-    return false;
+    area.innerHTML = "Subject cannot be empty!";
+    return (btn.disabled = true);
   }
   var message = document.getElementById("contact-message").value;
   if (message == "") {
-    document.querySelector(".status").innerHTML = "Message cannot be empty";
-    return false;
+    area.innerHTML = "Message cannot be empty!";
+    return (btn.disabled = true);
   }
-  document.querySelector(".status").innerHTML = "Sending...";
+  area.innerHTML = "Ready to send!";
+  btn.disabled = false;
 }
 
 // <!-- Form validation -->
+
+(function ($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      if (target.length) {
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 45,
+          },
+          1000,
+          "easeInOutExpo"
+        );
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $(".js-scroll-trigger").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $("body").scrollspy({
+    target: "#mainNav",
+    offset: 96,
+  });
+})(jQuery); // End of use strict
