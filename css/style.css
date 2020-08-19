@@ -61,6 +61,11 @@ mark {
   background-color: rgba(248,192,67,.7);
 }
 
+@media(max-width: 460px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+}
 
 .color-text {
   color: black;
