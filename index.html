@@ -1,1098 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Adam Kukliński Web-Dev</title>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-    />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="img/dice-d20-favicon.ico"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Adam Kukliński Web-Dev</title>
 
-  <body>
-    <!-- Main navigation -->
-    <header>
-      <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
-      >
-        <div class="container">
-          <a class="navbar-brand"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#intro-section"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#testimonials"
-                  >About Me</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            <!-- Social Icon  -->
-            <ul class="navbar-nav nav-flex-icons">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://www.facebook.com/adam.kuklinski.96/"
-                  target="_blank"
-                >
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://github.com/Q-Click?tab=repositories"
-                  target="_blank"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://www.linkedin.com/in/adam-kukliński-620b05146"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/dice-d20-favicon.ico" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Main navigation -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#intro-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#testimonials">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/adam.kuklinski.96/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Q-Click?tab=repositories" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/adam-kukliński-620b05146" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar -->
-      <!-- Full Page Intro -->
-      <div id="intro-section" class="view">
-        <!-- Mask & flexbox options-->
-        <!-- Intro Section -->
-        <div
-          class="view jarallax"
-          style="
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div id="intro-section" class="view">
+      <!-- Mask & flexbox options-->
+      <!-- Intro Section -->
+      <div class="view jarallax" style="
             background-image: url('/img/images/himalayas-wallpaper-1.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-          "
-        >
-          <div class="mask rgba-white-strong">
-            <div
-              class="container h-100 d-flex justify-content-center align-items-center"
-            >
-              <div class="row">
-                <div class="col-md-12 pt-3">
-                  <div class="white-text text-center pt-5">
-                    <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">
-                      <strong>Adam Kukliński</strong>
-                    </h1>
-                    <h5
-                      class="text-uppercase font-weight-bold wow fadeIn"
-                      data-wow-delay="0.4s"
-                    >
-                      <mark>Front-end Developer</mark>
-                    </h5>
-                  </div>
+          ">
+        <div class="mask rgba-white-strong">
+          <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="col-md-12 pt-3">
+                <div class="white-text text-center pt-5">
+                  <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">
+                    <strong>Adam Kukliński</strong>
+                  </h1>
+                  <h5 class="text-uppercase font-weight-bold wow fadeIn" data-wow-delay="0.4s">
+                    <mark>Front-end Developer</mark>
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Mask & flexbox options-->
       </div>
-      <!-- Full Page Intro -->
-    </header>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
 
-    <!--Main layout-->
-    <main>
-      <!--Section: about-->
-      <section id="skills" class="py-5">
-        <!-- Container -->
-        <div class="container">
-          <!-- Section heading -->
-          <h2
-            class="h1-responsive font-weight-bold text-center mb-5 animated wow fadeIn"
-            data-wow-delay="0.2s"
-          >
-            Skills
-          </h2>
-          <!-- Grid row -->
-          <div class="row text-center">
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="img/svg/html-5 (1).svg"
-                  alt="HTML"
-                />
-                <h4 class="font-weight-bold my-3">
-                  HTML
-                </h4>
-              </div>
+  <!--Main layout-->
+  <main>
+    <!--Section: about-->
+    <section id="skills" class="py-5">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5 animated wow fadeIn" data-wow-delay="0.2s">
+          Skills
+        </h2>
+        <!-- Grid row -->
+        <div class="row text-center">
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="img/svg/html-5 (1).svg" alt="HTML" />
+              <h4 class="font-weight-bold my-3">
+                HTML
+              </h4>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img class="img-fluid logo" src="/img/svg/css.svg" alt="CSS" />
-                <h4 class="font-weight-bold my-3">
-                  CSS
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/javascript-js-seeklogo.com.svg"
-                  alt="JavaScript"
-                />
-                <h4 class="font-weight-bold my-3">
-                  JavaScript
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/react.svg"
-                  alt="React"
-                />
-                <h4 class="font-weight-bold my-3">
-                  React
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/bootstrap-seeklogo.com.svg"
-                  alt="Bootstrap"
-                />
-                <h4 class="font-weight-bold my-3">
-                  Bootstrap
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e36b1814.0344731115305261794387.png"
-                  alt="MongoDB"
-                />
-                <h4 class="font-weight-bold my-3">
-                  MongoDB
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/nodejs.svg"
-                  alt="Node"
-                />
-                <h4 class="font-weight-bold my-3">
-                  Node
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/sass.svg"
-                  alt="SASS"
-                />
-                <h4 class="font-weight-bold my-3">
-                  Sass
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/iconfinder_jquery-2048-black_167623.png"
-                  alt="jQuery"
-                />
-                <h4 class="font-weight-bold my-3">
-                  jQuery
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/webpack.svg"
-                  alt="Webpack"
-                />
-                <h4 class="font-weight-bold my-3">
-                  Webpack
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img class="img-fluid logo" src="/img/svg/npm.svg" alt="NPM" />
-                <h4 class="font-weight-bold my-3">
-                  NPM
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div
-              class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-body pb-0">
-                <img
-                  class="img-fluid logo"
-                  src="/img/svg/h2gXRRrD.png"
-                  alt="GSAP"
-                />
-                <h4 class="font-weight-bold my-3">
-                  GSAP
-                </h4>
-              </div>
-            </div>
-            <!-- Grid column -->
           </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/css.svg" alt="CSS" />
+              <h4 class="font-weight-bold my-3">
+                CSS
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/javascript-js-seeklogo.com.svg" alt="JavaScript" />
+              <h4 class="font-weight-bold my-3">
+                JavaScript
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/react.svg" alt="React" />
+              <h4 class="font-weight-bold my-3">
+                React
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/bootstrap-seeklogo.com.svg" alt="Bootstrap" />
+              <h4 class="font-weight-bold my-3">
+                Bootstrap
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo"
+                src="/img/svg/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e36b1814.0344731115305261794387.png"
+                alt="MongoDB" />
+              <h4 class="font-weight-bold my-3">
+                MongoDB
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/nodejs.svg" alt="Node" />
+              <h4 class="font-weight-bold my-3">
+                Node
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/sass.svg" alt="SASS" />
+              <h4 class="font-weight-bold my-3">
+                Sass
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/iconfinder_jquery-2048-black_167623.png" alt="jQuery" />
+              <h4 class="font-weight-bold my-3">
+                jQuery
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/webpack.svg" alt="Webpack" />
+              <h4 class="font-weight-bold my-3">
+                Webpack
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/npm.svg" alt="NPM" />
+              <h4 class="font-weight-bold my-3">
+                NPM
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-2 mb-2 animated wow fadeIn" data-wow-delay="0.4s">
+            <div class="card-body pb-0">
+              <img class="img-fluid logo" src="/img/svg/h2gXRRrD.png" alt="GSAP" />
+              <h4 class="font-weight-bold my-3">
+                GSAP
+              </h4>
+            </div>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Container -->
-      </section>
-      <!--Section: about-->
+      </div>
+      <!-- Container -->
+    </section>
+    <!--Section: about-->
 
-      <!--Section: projects-->
-      <section
-        id="projects"
-        class="text-center py-5"
-        style="background-color: #eee;"
-      >
-        <!-- Container -->
-        <div class="container">
-          <!-- Section heading -->
-          <h2
-            class="h1-responsive font-weight-bold mb-5 animated wow fadeIn"
-            data-wow-delay="0.2s"
-          >
-            Projects
-          </h2>
-          <!-- Section description -->
-          <h3
-            class="w-responsive text-black mx-auto mb-5 animated wow fadeIn"
-            data-wow-delay="0.2s"
-          >
-            Here is my work, my projects realized during courses or just by my
-            idea. Hope You will like it. (Live projects are coming soon!)
-          </h3>
+    <!--Section: projects-->
+    <section id="projects" class="text-center py-5" style="background-color: #eee;">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5 animated wow fadeIn" data-wow-delay="0.2s">
+          Projects
+        </h2>
+        <!-- Section description -->
+        <h3 class="w-responsive text-black mx-auto mb-5 animated wow fadeIn" data-wow-delay="0.2s">
+          Here is my work, my projects realized during courses or just by my
+          idea. Hope You will like it. (Live projects are coming soon!)
+        </h3>
 
-          <!-- Grid row -->
-          <div class="row text-center">
-            <!-- Grid column -->
+        <!-- Grid row -->
+        <div class="row text-center">
+          <!-- Grid column -->
 
-            <div
-              class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img src="/img/images/TO DO.PNG" class="img-fluid" alt="" />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">To Do App</h4>
-                <p>
-                  React app made to help organize daily plans. Rarely used.
-                </p>
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://q-click.github.io/Projekt-4---To-Do-App/"
-                  target="_blank"
-                  ><i class="fa fa-clone left"></i> View live</a
-                >
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Projekt-4---To-Do-App/tree/master"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
+          <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/TO DO.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img src="/img/images/Quiz.PNG" class="img-fluid" alt="" />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">Quiz</h4>
-                <p>
-                  Quiz game made with Node.js and some CSS. Good luck!
-                </p>
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://app-quiz-game.herokuapp.com/"
-                  target="_blank"
-                  ><i class="fa fa-clone left"></i> View live</a
-                ><a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Projekt-2---Quiz"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">To Do App</h4>
+              <p>
+                React app made to help organize daily plans. Rarely used.
+              </p>
+              <a class="btn btn-color btn-sm" href="https://q-click.github.io/Projekt-4---To-Do-App/" target="_blank"><i
+                  class="fa fa-clone left"></i> View live</a>
+              <a class="btn btn-color btn-sm" href="https://github.com/Q-Click/Projekt-4---To-Do-App/tree/master"
+                target="_blank"><i class="fa fa-code left"></i> View code</a>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img
-                  src="/img/images/End Time Clock.PNG"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">End Time Clock</h4>
-                <p>
-                  React app made during courses. How long will You endure?
-                </p>
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://q-click.github.io/Projekt-3---End-Time-Clock/"
-                  target="_blank"
-                  ><i class="fa fa-clone left"></i> View live</a
-                ><a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Projekt-3---End-Time-Clock"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
-            </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
-          <!-- Grid row -->
-          <div class="row text-center">
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img src="/img/images/CandyShop.PNG" class="img-fluid" alt="" />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">Candy Shop</h4>
-                <p>
-                  Simple NPM Bootstrap/Sass shop template made just for fun.
-                  Sweet.
-                </p>
-                <!-- <a class="btn btn-color btn-sm" href="https://q-click.github.io/Projekt-1---Candy-Shop/."><i
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/Quiz.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Quiz</h4>
+              <p>
+                Quiz game made with Node.js and some CSS. Good luck!
+              </p>
+              <a class="btn btn-color btn-sm" href="https://app-quiz-game.herokuapp.com/" target="_blank"><i
+                  class="fa fa-clone left"></i> View live</a><a class="btn btn-color btn-sm"
+                href="https://github.com/Q-Click/Projekt-2---Quiz" target="_blank"><i class="fa fa-code left"></i> View
+                code</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/End Time Clock.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">End Time Clock</h4>
+              <p>
+                React app made during courses. How long will You endure?
+              </p>
+              <a class="btn btn-color btn-sm" href="https://q-click.github.io/Projekt-3---End-Time-Clock/"
+                target="_blank"><i class="fa fa-clone left"></i> View live</a><a class="btn btn-color btn-sm"
+                href="https://github.com/Q-Click/Projekt-3---End-Time-Clock" target="_blank"><i
+                  class="fa fa-code left"></i> View code</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        <!-- Grid row -->
+        <div class="row text-center">
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/CandyShop.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Candy Shop</h4>
+              <p>
+                Simple NPM Bootstrap/Sass shop template made just for fun.
+                Sweet.
+              </p>
+              <!-- <a class="btn btn-color btn-sm" href="https://q-click.github.io/Projekt-1---Candy-Shop/."><i
                   class="fa fa-clone left"></i> View project - not
                 deployed</a> -->
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Projekt-1---Candy-Shop/tree/master"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
+              <a class="btn btn-color btn-sm" href="https://github.com/Q-Click/Projekt-1---Candy-Shop/tree/master"
+                target="_blank"><i class="fa fa-code left"></i> View code</a>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img src="/img/images/Game.PNG" class="img-fluid" alt="" />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">The Game</h4>
-                <p>
-                  Survival game made with JavaScript, Tiled and Phaser3. Lookout
-                  for bear.
-                </p>
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://q-click-the-game.netlify.app/"
-                  target="_blank"
-                  ><i class="fa fa-clone left"></i> View live</a
-                >
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Projekt-5---The-Game"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img
-                  src="/img/images/under construction.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">
-                  Place for greatest project
-                </h4>
-                <p>
-                  Some great idea for project.
-                </p>
-                <a
-                  class="btn btn-color btn-sm"
-                  href="https://github.com/Q-Click/Q-Click.github.io"
-                  target="_blank"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
-            </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
-          <!-- Grid row -->
-          <div class="row text-center">
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img
-                  src="/img/images/under construction.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">Weather App</h4>
-                <p>
-                  Work in progress.
-                </p>
-                <!-- <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-clone left"></i> View project - not
-                  deployed</a
-                > -->
-                <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
-            </div>
-            <!-- Grid column -->
+          <!-- Grid column -->
 
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img
-                  src="/img/images/under construction.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">SPA project</h4>
-                <p>
-                  Work in progress.
-                </p>
-                <!-- <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-clone left"></i> View project - not
-                  deployed</a
-                > -->
-                <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/Game.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-lg-4 col-md-6 pb-4 animated wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <!--Featured image-->
-              <div class="view overlay rounded z-depth-1">
-                <img
-                  src="/img/images/under construction.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Excerpt-->
-              <div class="card-body pb-0">
-                <h4 class="font-weight-bold my-3">Tincture Calculator</h4>
-                <p>
-                  React app made to calculate percent of alcohol in simple
-                  homemade beverages and tinctures. Cheers!
-                </p>
-                <!-- <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-clone left"></i> View project - not
-                  deployed</a
-                > -->
-                <a class="btn btn-color btn-sm"
-                  ><i class="fa fa-code left"></i> View code</a
-                >
-              </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">The Game</h4>
+              <p>
+                Survival game made with JavaScript, Tiled and Phaser3. Lookout
+                for bear.
+              </p>
+              <a class="btn btn-color btn-sm" href="https://q-click-the-game.netlify.app/" target="_blank"><i
+                  class="fa fa-clone left"></i> View live</a>
+              <a class="btn btn-color btn-sm" href="https://github.com/Q-Click/Projekt-5---The-Game" target="_blank"><i
+                  class="fa fa-code left"></i> View code</a>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/weather.PNG" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Weather App</h4>
+              <p>
+                React app showing weather anywhere in the world. Winter is Coming!
+              </p>
+              <a class="btn btn-color btn-sm" target="_blank"
+                href="https://q-click.github.io/Projekt-7---Weather-App/"><i class="fa fa-clone left"></i> View Live</a>
+              <a class="btn btn-color btn-sm" target="_blank"
+                href="https://github.com/Q-Click/Projekt-7---Weather-App"><i class="fa fa-code left"></i> View code</a>
+            </div>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Container -->
-      </section>
-      <!--Section: projects-->
-
-      <!-- Section: testimonials-->
-      <section id="testimonials" class="text-center py-5">
-        <!-- Container -->
-        <div class="container">
-          <!-- Section heading -->
-          <h2
-            class="h1-responsive font-weight-bold mb-5 animated wow fadeIn"
-            data-wow-delay="0.2s"
-          >
-            About Me
-          </h2>
-
-          <!--About me-->
-
-          <div class="testimonial">
-            <!--Avatar-->
-            <div
-              class="avatar mx-auto mb-4 animated wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <img
-                src="/img/images/IMG_20200519_174205_099.jpg"
-                class="rounded-circle img-fluid"
-                alt="My photo"
-              />
+        <!-- Grid row -->
+        <!-- Grid row -->
+        <div class="row text-center">
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/under construction.jpg" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
-            <!--Content-->
-            <p class="animated wow flipInX" data-wow-delay="0.2s">
-              Hi, My name is Adam Kukliński and I am a Front-end Developer from
-              Cracow. I started to learn programming a half year ago and I loved
-              it. So now I spend every bit of my spare time to learn new
-              technologies and write code as much as I can.
-            </p>
-            <p class="animated wow flipInX" data-wow-delay="0.2s">
-              About me? "By night one way, by day another..." - I am no Fiona
-              but still I could turn green (lactose intolerant) :D. Jokes aside
-              - I am huge fan of a good plot - no matter is it a book, movie or
-              video game. Also I have few hobbies - I am collectioner of WH40K
-              figures and MTG cards. If there is an opportunity, I like to use
-              them to crush my friends or just play some regular cards, or board
-              games.
-            </p>
-            <p class="animated wow flipInX" data-wow-delay="0.2s">
-              Apart from that geek-nerd stuff You can meet me at the gym hall,
-              rivers, climbing walls - usually I will be occupied - if not, I
-              will be taking some photos - so watch out, not to walk into the
-              frame. In any other cases do not be afraid to approach and say hi
-              ;).
-            </p>
-
-            <!--Section: Images-->
-            <section class="text-center">
-              <!-- Grid row -->
-              <div class="row">
-                <!-- Grid column -->
-
-                <div class="col-lg-4 col-md-12 mb-3">
-                  <div class="view overlay z-depth-1-half">
-                    <img
-                      src="/img/images/FB_IMG_1589993766821.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="river"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                  <div class="view overlay z-depth-1-half">
-                    <img
-                      src="/img/images/67401746_2562005607155244_6947784091534098432_n.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="river2"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                  <div class="view overlay z-depth-1-half">
-                    <img
-                      src="/img/images/IMG_20200716_174953_961.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="bike"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-
-              <!-- Grid row -->
-              <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-6 mb-3">
-                  <div class="view overlay z-depth-1-half hover-gray">
-                    <img
-                      src="/img/images/IMG_20200322_134856_619-EFFECTS.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="castle"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-6 mb-3">
-                  <div class="view overlay z-depth-1-half hover-gray">
-                    <img
-                      src="/img/images/IMG_20200528_190839_277.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="river3"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-
-              <!-- Grid row -->
-              <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-12 mb-3">
-                  <div class="view overlay z-depth-1-half">
-                    <img
-                      src="/img/images/IMG_20200625_183059_374.jpg"
-                      class="img-fluid animated wow fadeIn"
-                      data-wow-delay="0.2s"
-                      alt="forest"
-                    />
-                    <a>
-                      <div class="mask rgba-white-light"></div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </section>
-            <!--Section: Images-->
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">
+                Place for greatest project
+              </h4>
+              <p>
+                Some great idea for project.
+              </p>
+              <a class="btn btn-color btn-sm" href="https://github.com/Q-Click/Q-Click.github.io" target="_blank"><i
+                  class="fa fa-code left"></i> View code</a>
+            </div>
           </div>
+          <!-- Grid column -->
 
-          <!--About me-->
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/under construction.jpg" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">SPA project</h4>
+              <p>
+                Work in progress.
+              </p>
+              <!-- <a class="btn btn-color btn-sm"
+                  ><i class="fa fa-clone left"></i> View project - not
+                  deployed</a
+                > -->
+              <a class="btn btn-color btn-sm"><i class="fa fa-code left"></i> View code</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 pb-4 animated wow fadeIn" data-wow-delay="0.2s">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="/img/images/under construction.jpg" class="img-fluid project" alt="" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Tincture Calculator</h4>
+              <p>
+                React app made to calculate percent of alcohol in simple
+                homemade beverages and tinctures. Cheers!
+              </p>
+              <!-- <a class="btn btn-color btn-sm"
+                  ><i class="fa fa-clone left"></i> View project - not
+                  deployed</a
+                > -->
+              <a class="btn btn-color btn-sm"><i class="fa fa-code left"></i> View code</a>
+            </div>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Container -->
-      </section>
-      <!--Section: testimonials -->
-      <!--Section: contact-->
-      <section id="contact" class="py-5" style="background-color: #eee;">
-        <div class="container animated wow slideInLeft">
-          <!-- Section heading -->
-          <h2 class="h1-responsive font-weight-bold text-center mb-5">
-            Contact
-          </h2>
-          <!-- Section description -->
-          <p class="text-center w-responsive mx-auto mb-5">
-            If You have any questions, please let me know by any ways of
-            communication below.
+        <!-- Grid row -->
+      </div>
+      <!-- Container -->
+    </section>
+    <!--Section: projects-->
+
+    <!-- Section: testimonials-->
+    <section id="testimonials" class="text-center py-5">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5 animated wow fadeIn" data-wow-delay="0.2s">
+          About Me
+        </h2>
+
+        <!--About me-->
+
+        <div class="testimonial">
+          <!--Avatar-->
+          <div class="avatar mx-auto mb-4 animated wow fadeIn" data-wow-delay="0.4s">
+            <img src="/img/images/IMG_20200519_174205_099.jpg" class="rounded-circle img-fluid" alt="My photo" />
+          </div>
+          <!--Content-->
+          <p class="animated wow flipInX" data-wow-delay="0.2s">
+            Hi, My name is Adam Kukliński and I am a Front-end Developer from
+            Cracow. I started to learn programming a half year ago and I loved
+            it. So now I spend every bit of my spare time to learn new
+            technologies and write code as much as I can.
+          </p>
+          <p class="animated wow flipInX" data-wow-delay="0.2s">
+            About me? "By night one way, by day another..." - I am no Fiona
+            but still I could turn green (lactose intolerant) :D. Jokes aside
+            - I am huge fan of a good plot - no matter is it a book, movie or
+            video game. Also I have few hobbies - I am collectioner of WH40K
+            figures and MTG cards. If there is an opportunity, I like to use
+            them to crush my friends or just play some regular cards, or board
+            games.
+          </p>
+          <p class="animated wow flipInX" data-wow-delay="0.2s">
+            Apart from that geek-nerd stuff You can meet me at the gym hall,
+            rivers, climbing walls - usually I will be occupied - if not, I
+            will be taking some photos - so watch out, not to walk into the
+            frame. In any other cases do not be afraid to approach and say hi
+            ;).
           </p>
 
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-9 mb-md-0 mb-5">
-              <form action="https://formspree.io/maypapvk" method="POST">
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input
-                        type="text"
-                        id="contact-name"
-                        class="form-control"
-                        name="name"
-                        onchange="validateForm()"
-                      />
-                      <label for="contact-name" class="">Your name</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
+          <!--Section: Images-->
+          <section class="text-center">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
 
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input
-                        type="text"
-                        id="contact-email"
-                        class="form-control"
-                        name="sender-email"
-                        onchange="validateForm()"
-                      />
-                      <label for="contact-email" class="">Your email</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-3">
+                <div class="view overlay z-depth-1-half">
+                  <img src="/img/images/FB_IMG_1589993766821.jpg" class="img-fluid animated wow fadeIn"
+                    data-wow-delay="0.2s" alt="river" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
+                  </a>
                 </div>
-                <!-- Grid row -->
+              </div>
+              <!-- Grid column -->
 
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
-                      <input
-                        type="text"
-                        id="contact-Subject"
-                        class="form-control"
-                        name="subject"
-                        onchange="validateForm()"
-                      />
-                      <label for="contact-Subject" class="">Subject</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="view overlay z-depth-1-half">
+                  <img src="/img/images/67401746_2562005607155244_6947784091534098432_n.jpg"
+                    class="img-fluid animated wow fadeIn" data-wow-delay="0.2s" alt="river2" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
+                  </a>
                 </div>
-                <!-- Grid row -->
+              </div>
+              <!-- Grid column -->
 
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-                    <div class="md-form">
-                      <textarea
-                        id="contact-message"
-                        class="form-control md-textarea"
-                        rows="3"
-                        name="message"
-                        onchange="validateForm()"
-                      ></textarea>
-                      <label for="contact-message">Your message</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="view overlay z-depth-1-half">
+                  <img src="/img/images/IMG_20200716_174953_961.jpg" class="img-fluid animated wow fadeIn"
+                    data-wow-delay="0.2s" alt="bike" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
+                  </a>
                 </div>
-                <!-- Grid row -->
-
-                <div class="text-center text-white text-md-left">
-                  <button
-                    id="btn-form"
-                    disabled
-                    class="btn btn-color btn-md"
-                    onclick="validateForm()"
-                    type="submit"
-                  >
-                    Send
-                  </button>
-                </div>
-              </form>
-
-              <div class="status"></div>
+              </div>
+              <!-- Grid column -->
             </div>
-            <!-- Grid column -->
+            <!-- Grid row -->
 
-            <!-- Grid column -->
-            <div class="col-md-3 text-center">
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <i class="fa fa-map-marker fa-2x color-text"></i>
-                  <p>Cracow, Poland</p>
-                </li>
-                <li>
-                  <a class="color-text" href="tel:663339089">
-                    <i class="fa fa-phone fa-2x mt-4 color-text"></i>
-                    <p>+ 48 663 339 089</p>
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-6 mb-3">
+                <div class="view overlay z-depth-1-half hover-gray">
+                  <img src="/img/images/IMG_20200322_134856_619-EFFECTS.jpg" class="img-fluid animated wow fadeIn"
+                    data-wow-delay="0.2s" alt="castle" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
                   </a>
-                </li>
-                <li>
-                  <a
-                    class="color-text"
-                    href="mailto:adam.kuklinski.k@gmail.com"
-                  >
-                    <i class="fa fa-envelope fa-2x mt-4 color-text"></i>
-                    <p class="mb-0">adam.kuklinski.k@gmail.com</p>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 mb-3">
+                <div class="view overlay z-depth-1-half hover-gray">
+                  <img src="/img/images/IMG_20200528_190839_277.jpg" class="img-fluid animated wow fadeIn"
+                    data-wow-delay="0.2s" alt="river3" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
                   </a>
-                </li>
-                <li>
-                  <a
-                    class="color-text"
-                    target="_blank"
-                    href="/src/assets/CV_AK.pdf"
-                    ><i class="fa fa-file-alt fa-2x mt-4 color-text"></i>
-                    <p class="mb-0">Resume download</p>
-                  </a>
-                </li>
-              </ul>
+                </div>
+              </div>
+              <!-- Grid column -->
             </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-12 mb-3">
+                <div class="view overlay z-depth-1-half">
+                  <img src="/img/images/IMG_20200625_183059_374.jpg" class="img-fluid animated wow fadeIn"
+                    data-wow-delay="0.2s" alt="forest" />
+                  <a>
+                    <div class="mask rgba-white-light"></div>
+                  </a>
+                </div>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </section>
+          <!--Section: Images-->
         </div>
-      </section>
-      <!--Section: contact-->
-    </main>
-    <!--Main layout-->
 
-    <!-- Footer -->
-    <footer class="page-footer font-small pt-4">
-      <!-- Footer Elements -->
-      <div class="container">
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item">
-            <a
-              class="btn-floating btn-fb mx-1"
-              href="https://www.facebook.com/adam.kuklinski.96/"
-              target="_blank"
-            >
-              <i class="fab fa-facebook"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              class="btn-floating btn-github mx-1"
-              href="https://github.com/Q-Click?tab=repositories"
-              target="_blank"
-            >
-              <i class="fab fa-github"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              class="btn-floating btn-li mx-1"
-              href="https://www.linkedin.com/in/adam-kukliński-620b05146"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin"> </i>
-            </a>
-          </li>
-        </ul>
-        <!-- Social buttons -->
+        <!--About me-->
       </div>
-      <!-- Footer Elements -->
+      <!-- Container -->
+    </section>
+    <!--Section: testimonials -->
+    <!--Section: contact-->
+    <section id="contact" class="py-5" style="background-color: #eee;">
+      <div class="container animated wow slideInLeft">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">
+          Contact
+        </h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">
+          If You have any questions, please let me know by any ways of
+          communication below.
+        </p>
 
-      <!-- Copyright -->
-      <div class="text-center color-text py-3">
-        © 2020 Copyright: Adam Kukliński.
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form action="https://formspree.io/maypapvk" method="POST">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-name" class="form-control" name="name" onchange="validateForm()" />
+                    <label for="contact-name" class="">Your name</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-email" class="form-control" name="sender-email"
+                      onchange="validateForm()" />
+                    <label for="contact-email" class="">Your email</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="contact-Subject" class="form-control" name="subject"
+                      onchange="validateForm()" />
+                    <label for="contact-Subject" class="">Subject</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea id="contact-message" class="form-control md-textarea" rows="3" name="message"
+                      onchange="validateForm()"></textarea>
+                    <label for="contact-message">Your message</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+
+              <div class="text-center text-white text-md-left">
+                <button id="btn-form" disabled class="btn btn-color btn-md" onclick="validateForm()" type="submit">
+                  Send
+                </button>
+              </div>
+            </form>
+
+            <div class="status"></div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fa fa-map-marker fa-2x color-text"></i>
+                <p>Cracow, Poland</p>
+              </li>
+              <li>
+                <a class="color-text" href="tel:663339089">
+                  <i class="fa fa-phone fa-2x mt-4 color-text"></i>
+                  <p>+ 48 663 339 089</p>
+                </a>
+              </li>
+              <li>
+                <a class="color-text" href="mailto:adam.kuklinski.k@gmail.com">
+                  <i class="fa fa-envelope fa-2x mt-4 color-text"></i>
+                  <p class="mb-0">adam.kuklinski.k@gmail.com</p>
+                </a>
+              </li>
+              <li>
+                <a class="color-text" target="_blank" href="/src/assets/CV_AK.pdf"><i
+                    class="fa fa-file-alt fa-2x mt-4 color-text"></i>
+                  <p class="mb-0">Resume download</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </section>
+    <!--Section: contact-->
+  </main>
+  <!--Main layout-->
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/modules/main.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/adam.kuklinski.96/" target="_blank">
+            <i class="fab fa-facebook"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-github mx-1" href="https://github.com/Q-Click?tab=repositories" target="_blank">
+            <i class="fab fa-github"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/adam-kukliński-620b05146"
+            target="_blank">
+            <i class="fab fa-linkedin"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="text-center color-text py-3">
+      © 2020 Copyright: Adam Kukliński.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/modules/main.js"></script>
+</body>
+
 </html>

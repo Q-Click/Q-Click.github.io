@@ -1,7 +1,7 @@
 /* Required for full background image */
 :root {
   --main-color: #464646;
---button-color: #4f66a7;
+  --button-color: #4f66a7;
 }
 
 html,
@@ -13,7 +13,6 @@ header,
 }
 
 @media (max-width: 740px) {
-
   html,
   body,
   header,
@@ -23,9 +22,7 @@ header,
   }
 }
 
-
 @media (max-width: 576px) {
-
   .sm-text {
     font-size: 3rem;
   }
@@ -57,15 +54,19 @@ header,
 }
 
 mark {
-  padding: .4rem 6rem;
-  background-color: rgba(248,192,67,.7);
+  padding: 0.4rem 6rem;
+  background-color: rgba(248, 192, 67, 0.7);
 }
 
-@media(max-width: 460px) {
+@media (max-width: 460px) {
   .display-2 {
     font-size: 4.5rem;
   }
 }
+
+/* .text-uppercase{
+  font-family: 'Playfair Display', serif;
+} */
 
 .color-text {
   color: black;
@@ -73,7 +74,15 @@ mark {
 
 .btn-color {
   background-color: var(--button-color);
-  color: white
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .project {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
 }
 
 .avatar {
@@ -129,5 +138,5 @@ body {
   pointer-events: none !important;
 }
 .mask:hover {
-  pointer-events: none!important;
+  pointer-events: none !important;
 }
