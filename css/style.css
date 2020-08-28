@@ -13,6 +13,7 @@ header,
 }
 
 @media (max-width: 740px) {
+
   html,
   body,
   header,
@@ -39,6 +40,7 @@ header,
 .top-nav-collapse {
   background-color: var(--main-color) !important;
 }
+
 .page-footer {
   background-color: #f7d27f;
 }
@@ -61,6 +63,11 @@ mark {
 @media (max-width: 460px) {
   .display-2 {
     font-size: 4.5rem;
+  }
+
+  mark {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -106,6 +113,52 @@ mark {
   font-size: 1.35em;
 }
 
+.cv {
+  margin-left: 6px;
+  font-size: 1.35em;
+  animation: wiggle 5s infinite
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  70% {
+    transform: rotate(0deg);
+
+  }
+
+  75% {
+    transform: rotate(15deg);
+    color: #f7d27f
+  }
+
+  95% {
+    transform: rotate(-15deg);
+
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+h3,
+p {
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 180%;
+}
+
+h4+p {
+  color: #000000;
+  font-size: 1em;
+}
+
 .logo {
   max-width: 70%;
 }
@@ -133,10 +186,12 @@ body {
 .wow {
   visibility: hidden;
 }
+
 .mask {
   cursor: default !important;
   pointer-events: none !important;
 }
+
 .mask:hover {
   pointer-events: none !important;
 }
