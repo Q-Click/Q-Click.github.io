@@ -33,19 +33,45 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Your custom styles (optional) -->
+    <!-- My custom styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Superslides -->
+    <link rel="stylesheet" href="css/modules/superslides.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/modules/owl.carousel.min.css" />
   </head>
 
   <body>
     <!-- Main navigation -->
     <header>
+      <!-- Full Page Intro -->
+      <div id="intro-section" class="view">
+        <div id="slides">
+          <div class="overlay-land"></div>
+
+          <div class="slides-container">
+            <img src="/img/images/slide1.jpg" alt="" />
+            <img src="/img/images/slide2.jpg" alt="" />
+            <img src="/img/images/slide3.jpg" alt="" />
+            <img src="/img/images/slide4.jpg" alt="" />
+          </div>
+
+          <div class="titleMessage">
+            <div class="heading">
+              <p class="main">ADAM KUKLIŃSKI</p>
+              <p class="sub typed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Full Page Intro -->
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
+        id="navigation"
+        class="navbar navbar-expand-lg navbar-dark scrolling-navbar"
       >
         <div class="container">
-          <a class="navbar-brand"></a>
+          <a class="navbar-brand text-white">Adam Kukliński</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -126,59 +152,22 @@
         </div>
       </nav>
       <!-- Navbar -->
-      <!-- Full Page Intro -->
-      <div id="intro-section" class="view">
-        <!-- Mask & flexbox options-->
-        <!-- Intro Section -->
-        <div
-          class="view jarallax"
-          style="
-            background-image: url('/img/images/himalayas-wallpaper-1.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-          "
-        >
-          <div class="mask rgba-white-strong">
-            <div
-              class="container h-100 d-flex justify-content-center align-items-center"
-            >
-              <div class="row">
-                <div class="col-md-12 pt-3">
-                  <div class="white-text text-center pt-5">
-                    <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">
-                      <strong>Adam Kukliński</strong>
-                    </h1>
-                    <h5
-                      class="text-uppercase font-weight-bold wow fadeIn"
-                      data-wow-delay="0.4s"
-                    >
-                      <mark>Front-end Developer</mark>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Mask & flexbox options-->
-      </div>
-      <!-- Full Page Intro -->
     </header>
 
     <!--Main layout-->
     <main>
       <!--Section: about-->
-      <section id="skills" class="py-5">
+      <section id="skills" class="mt-5 py-5">
         <!-- Container -->
         <div class="container">
           <!-- Section heading -->
           <h2
-            class="h1-responsive font-weight-bold text-center mb-5 animated wow fadeIn"
+            class="h1-responsive font-weight-bold text-center mb-3 animated wow fadeIn"
             data-wow-delay="0.2s"
           >
-            Skills
+            Technical Skills
           </h2>
+
           <!-- Grid row -->
           <div class="row text-center">
             <!-- Grid column -->
@@ -1271,7 +1260,7 @@
       <!-- Footer Elements -->
 
       <!-- Copyright -->
-      <div class="text-center color-text py-3">
+      <div class="text-center color-text pb-4">
         © 2020 Copyright: Adam Kukliński.
       </div>
       <!-- Copyright -->
@@ -1288,5 +1277,17 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/modules/main.js"></script>
+    <!-- Superslides script -->
+    <script
+      type="text/javascript"
+      src="js/modules/jquery.superslides.min.js"
+    ></script>
+    <!-- Carousel script -->
+    <script
+      type="text/javascript"
+      src="js/modules/owl.carousel.min.js"
+    ></script>
+    <!-- Typed script -->
+    <script type="text/javascript" src="js/modules/typed.min.js"></script>
   </body>
 </html>

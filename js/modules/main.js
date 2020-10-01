@@ -6,6 +6,37 @@
 
 $(document).ready(function () {
   new WOW().init();
+  $("#slides").superslides({
+    animation: "fade",
+    play: 5000,
+    pagination: false,
+  });
+
+  var typed = new Typed(".typed", {
+    strings: ["Software Engineer.", "Web Developer.", "Student."],
+    typeSpeed: 70,
+    loop: true,
+    startDelay: 1000,
+    showCursor: false,
+  });
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    items: 4,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      480: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      938: {
+        items: 4,
+      },
+    },
+  });
 });
 
 // <!-- MDB animation -->
@@ -83,3 +114,14 @@ function validateForm() {
     offset: 96,
   });
 })(jQuery); // End of use strict
+
+const nav = document.querySelector(".navbar");
+const navTop = 610;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navTop) {
+    nav.classList.add("fixed-top");
+  } else {
+    nav.classList.remove("fixed-top");
+  }
+});
