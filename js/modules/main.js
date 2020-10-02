@@ -115,13 +115,17 @@ function validateForm() {
   });
 })(jQuery); // End of use strict
 
-const nav = document.querySelector(".navbar");
-const navTop = 610;
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".navbar");
+  const navTop = nav.offsetTop;
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > navTop) {
-    nav.classList.add("fixed-top");
-  } else {
-    nav.classList.remove("fixed-top");
-  }
+  window.addEventListener("scroll", () => {
+    // console.log(Math.floor(window.scrollY));
+    // console.log(nav.offsetTop);
+    if (window.scrollY > navTop) {
+      nav.classList.add("fixed-top");
+    } else {
+      nav.classList.remove("fixed-top");
+    }
+  });
 });

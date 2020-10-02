@@ -37,6 +37,10 @@ header,
   }
 }
 
+#navigation {
+  z-index: 20;
+}
+
 .top-nav-collapse {
   background-color: var(--main-color) !important;
 }
