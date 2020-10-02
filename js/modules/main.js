@@ -1,6 +1,6 @@
 // <!-- Landing page animation -->
 $(window).on("load", function () {
-  $(".loader .inner").fadeOut(500, function () {
+  $(".loader .inner").fadeOut(750, function () {
     $(".loader").fadeOut(750);
   });
 });
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     // console.log(Math.floor(window.scrollY));
-    // console.log(nav.offsetTop);
+    // console.log(window.scrollY > navTop);
     if (window.scrollY > navTop) {
       nav.classList.add("fixed-top");
     } else {
